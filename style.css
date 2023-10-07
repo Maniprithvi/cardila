@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.page{
+    width: 100% !important;
+    margin: 0 auto;
+    overflow: hidden;
+}
+li{
+    list-style: none;
+}
+
+.nav-item :hover{
+ transform:scale(1.3) !important;
+ color: black !important;
+ border-bottom: 2px solid black;
+ transition: ease-in-out;
+}
+.Home-inner{
+    background-image: url(./assets/images/welcome-hero/welcome-banner.jpg);
+     background-size:cover;
+    /* background-size:contain; */
+    /* background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)); */
+    /* background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(); The least supported option. */
+   object-fit:initial; 
+   height: 100vh; 
+   width: 100vw !important; 
+   display: flex;
+   align-items: center;
+   justify-content: center; }
+  
+   .home-cont{
+      max-width: 100%;
+      min-height: 300px;
+      color: white !important;
+    
+   }
+   .bg-white {
+    background: green !important;
+    transition: 1.5s ease-in;
+  }
+  
+  .bg-white.scrolled {
+    background: red !important;
+  }
+   .text-da{
+    color: black !important;
+   }
+   .nav-link :hover{
+     color: aliceblue;
+   }
+   .home-cont > p{
+      text-wrap:pretty;
+   }
+   svg {
+       font-family: "Abyssinica SIL", sans-serif;
+       width: 100%; height: 100%;
+   }
+   svg text {
+       animation: stroke 6s infinite alternate;
+       stroke-width: 2;
+       stroke: #D5D5D5;
+       font-size: 81px;
+   }
+   @keyframes stroke {
+       0%   {
+           fill: rgba(128,134,133,0); stroke: rgba(213,213,213,1);
+           stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+       }
+       70%  {fill: rgba(128,134,133,0); stroke: rgba(213,213,213,1); }
+       80%  {fill: rgba(128,134,133,0); stroke: rgba(213,213,213,1); stroke-width: 3; }
+       100% {
+           fill: rgba(128,134,133,1); stroke: rgba(213,213,213,0);
+           stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+       }
+   }
+   .row{
+    margin-top: 40px;
+   }
+   .search-items {
+    width: 100% !important;
+    height: 250px;
+    padding: 20px;
+    background-color:white;
+    box-shadow: 6px 7px 12px 13px rgba(218, 218, 218, 0.92);
+    /* background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(219.00, 23%, 84%) 0, transparent 55%);
+      } */
+    }
+   
+
+     
+     .cards> div:hover{
+        
+        background-color: blue;
+        color: white;
+        transition: ease-in-out;
+      }
+      /* flex-carso */
+      .flex-it{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: center;
+     }
+     .flex-it >img{
+        width: 100% !important;
+        height: auto;
+     }
+     
+     .fe-grid{
+        justify-content: center;
+     }
+     .card:hover > img{
+        transform: scale(1.2);
+        transition: ease-in 1s;
+     }
+
+     .r-o{
+        width: 100%;
+        background-color: rgb(36, 13, 36)  !important;
+        color: white;
+     }
+     .brand-img{
+        gap:1rem;
+     }
+
+
+   @media screen and (max-width:600px) {
+    body{
+        width: 100% !important;
+    
+    }
+    .page{
+        width:100% !important;
+    }
+    .Home-inner{
+        margin-top: 100px;
+        background-image: url(./assets/images/new-cars-model/ncm1.png) !important;
+        background-repeat: no-repeat;
+        background-size: contain;
+        object-position: center;
+        color: black;
+    }
+    .search-items{
+        display: block;
+        height: 720px;
+    }
+    .text{
+        margin-top: 20px !important;
+        color: black !important;
+    }
+    .navbar-dark{
+        background-color:black !important;
+        opacity: 0.7 !important;
+    }
+    .cards > {
+        margin: 0 auto;
+    }
+    .body{
+        width: 100% !important;
+        
+
+    }
+    .fe-grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+     }
+     .r-o{
+        width: 100% !important;
+        padding-top: 10px;
+     }
+
+    
+   }
